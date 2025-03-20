@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, Calendar, Medal, Star } from 'lucide-react';
 
@@ -12,7 +11,7 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-secondary text-sm font-medium mb-6 appear fade-in">
               <Clock className="h-4 w-4" />
-              <span>Launching Fall 2023</span>
+              <span>Launching Fall 2025</span>
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6 appear fade-in" style={{ animationDelay: '0.1s' }}>
