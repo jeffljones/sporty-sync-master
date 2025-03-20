@@ -1,12 +1,57 @@
+
 import SectionTitle from '@/components/ui/SectionTitle';
 import SportCard from '@/components/ui/SportCard';
 import { 
-  Tennis, 
   Volleyball, 
-  PingPong, 
   User, 
   Users 
 } from 'lucide-react';
+
+// Custom icon for Tennis since Lucide doesn't have a Tennis icon
+const TennisIcon = (props: any) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <circle cx="12" cy="12" r="10" />
+    <path d="M18 12.5a1 1 0 100-2v2zm-12-2a1 1 0 100 2v-2z" />
+    <path d="M5 5c1 1.5 2.5 3 7 3s6-1.5 7-3" />
+    <path d="M5 19c1-1.5 2.5-3 7-3s6 1.5 7 3" />
+  </svg>
+);
+
+// Custom icon for Table Tennis (Ping Pong)
+const TableTennisIcon = (props: any) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <circle cx="12" cy="12" r="3" />
+    <path d="M4 7h.01" />
+    <path d="M20 7h.01" />
+    <path d="M4 17h.01" />
+    <path d="M20 17h.01" />
+    <path d="M8 3h8" />
+    <path d="M8 21h8" />
+    <path d="M7 18l10-12" />
+  </svg>
+);
 
 // Custom icon since Lucide doesn't have all sports icons
 const PickleballIcon = (props: any) => (
@@ -87,13 +132,13 @@ const SpikeBallIcon = (props: any) => (
 
 const Sports = () => {
   const sports = [
-    { name: "Tennis", icon: Tennis },
+    { name: "Tennis", icon: TennisIcon },
     { name: "Volleyball", icon: Volleyball },
     { name: "Pickleball", icon: PickleballIcon },
     { name: "Badminton", icon: BadmintonIcon },
-    { name: "Table Tennis", icon: PingPong },
+    { name: "Table Tennis", icon: TableTennisIcon },
     { name: "Squash", icon: SquashIcon },
-    { name: "Racquetball", icon: Tennis },
+    { name: "Racquetball", icon: TennisIcon },
     { name: "Spikeball", icon: SpikeBallIcon },
   ];
 
