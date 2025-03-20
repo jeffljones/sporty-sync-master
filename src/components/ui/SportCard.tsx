@@ -5,7 +5,7 @@ import { LucideIcon } from 'lucide-react';
 
 interface SportCardProps {
   name: string;
-  icon: LucideIcon;
+  icon: LucideIcon | React.FC<React.SVGProps<SVGSVGElement>>;
   className?: string;
   delay?: number;
   style?: React.CSSProperties;

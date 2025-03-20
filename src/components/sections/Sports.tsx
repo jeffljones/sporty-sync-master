@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 
 // Custom icon for Tennis since Lucide doesn't have a Tennis icon
-const TennisIcon = (props: any) => (
+const TennisIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -29,7 +29,7 @@ const TennisIcon = (props: any) => (
 );
 
 // Custom icon for Table Tennis (Ping Pong)
-const TableTennisIcon = (props: any) => (
+const TableTennisIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -54,7 +54,7 @@ const TableTennisIcon = (props: any) => (
 );
 
 // Custom icon since Lucide doesn't have all sports icons
-const PickleballIcon = (props: any) => (
+const PickleballIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -73,7 +73,7 @@ const PickleballIcon = (props: any) => (
   </svg>
 );
 
-const BadmintonIcon = (props: any) => (
+const BadmintonIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -91,7 +91,7 @@ const BadmintonIcon = (props: any) => (
   </svg>
 );
 
-const SquashIcon = (props: any) => (
+const SquashIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -111,7 +111,7 @@ const SquashIcon = (props: any) => (
   </svg>
 );
 
-const SpikeBallIcon = (props: any) => (
+const SpikeBallIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
