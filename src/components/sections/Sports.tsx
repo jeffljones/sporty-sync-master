@@ -1,10 +1,9 @@
-
 import SectionTitle from '@/components/ui/SectionTitle';
 import SportCard from '@/components/ui/SportCard';
 import { 
-  Racquet, 
+  Tennis, 
   Volleyball, 
-  TableTennis, 
+  PingPong, 
   User, 
   Users 
 } from 'lucide-react';
@@ -88,13 +87,13 @@ const SpikeBallIcon = (props: any) => (
 
 const Sports = () => {
   const sports = [
-    { name: "Tennis", icon: Racquet },
+    { name: "Tennis", icon: Tennis },
     { name: "Volleyball", icon: Volleyball },
     { name: "Pickleball", icon: PickleballIcon },
     { name: "Badminton", icon: BadmintonIcon },
-    { name: "Table Tennis", icon: TableTennis },
+    { name: "Table Tennis", icon: PingPong },
     { name: "Squash", icon: SquashIcon },
-    { name: "Racquetball", icon: Racquet },
+    { name: "Racquetball", icon: Tennis },
     { name: "Spikeball", icon: SpikeBallIcon },
   ];
 
