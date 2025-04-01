@@ -1,5 +1,6 @@
-
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '@/lib/AuthContext';
 import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/sections/Hero';
 import Features from '@/components/sections/Features';
@@ -9,6 +10,16 @@ import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
 
 const Index = () => {
+  const { user } = useAuth();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // If user is already logged in, redirect to dashboard
+    if (user) {
+      navigate('/dashboard');
+    }
+  }, [user, navigate]);
+
   useEffect(() => {
     // Simple scroll animation
     const animateOnScroll = () => {

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "docs"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "sporty-sync-master-1"
+	}
+}
